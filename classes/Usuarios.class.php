@@ -11,7 +11,7 @@ global $pdo;
 $sql= $pdo->prepare("INSERT INTO usuarios SET nome = :nome, email = :email, senha= :senha, telefone= :telefone");
 $sql->bindValue(":nome", $nome);
 $sql->bindValue(":email", $email);
-$sql->bindValue(":senha", md5($senha));
+$sql->bindValue(":senha", $senha);
 $sql->bindValue(":telefone", $telefone);
 $sql->execute();
 

@@ -1,8 +1,8 @@
 <?php
-session_start();
+//session_start();
 global $pdo;
 try {
-$db="mysql:dbname=classificados;host=localhost";
+$db="mysql:dbname=imobiliaria;host=localhost";
 $user="root";
 $pass="";
 
