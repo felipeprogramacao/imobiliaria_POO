@@ -3,9 +3,7 @@
 <link rel="stylesheet" href="assets/css/casas.css">
 
 <?php 
-
-require 'config.php';
-        require 'classes/Casas.class.php';
+require 'classes/Casas.class.php';
 require 'pages/topo.php'; ?>
 
 

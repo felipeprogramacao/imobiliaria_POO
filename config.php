@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 global $pdo;
 try {
 $db="mysql:dbname=imobiliaria;host=localhost";
