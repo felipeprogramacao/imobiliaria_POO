@@ -26,7 +26,7 @@ require 'pages/topo.php'; ?>
                             
                 $ft_capa=$value["foto_capa"];
                 $imovel=$value["imovel"];
-                $terreno=$value["garagem"]; 
+                $terreno=$value["diferencial"]; 
                $proprietario=$value["proprietario"];			
        
                 ?>
@@ -48,7 +48,7 @@ require 'pages/topo.php'; ?>
 <li class="list-group-item list-group-item-light">2 Suítes</li>
 <li class="list-group-item list-group-item-light">Piscina</li>
 <li class="list-group-item list-group-item-light">2 Vagas na Garagem</li>
-<li class="list-group-item list-group-item-light">Corretor <b><?php echo   $proprietario; ?></b>             <a href="https://wa.me/55519999999"><img src="imagens/designe/wht.jpg" width="280" height="46"></a></li>
+<li class="list-group-item list-group-item-light">Corretor <b><?php echo   $proprietario; ?></b>             <a href="https://wa.me/55519999999"><img src="assets/images/wht.jpg" width="280" height="46"></a></li>
 
 </ul>
 </div>

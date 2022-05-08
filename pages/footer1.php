@@ -1,5 +1,5 @@
 <br>
-  <table class="table table-dark m-1">
+  <table class="table table-dark p-3">
     <thead>
       <tr>
         <th scope="col"></th>

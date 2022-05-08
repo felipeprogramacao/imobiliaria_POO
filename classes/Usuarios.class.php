@@ -18,25 +18,25 @@ $sql->execute();
 return true;
     }else{
         return false;
-    }
-}
-public function login($email, $senha){
-    global $pdo;
-    $sql=$pdo->prepare("SELECT id_usuarios FROM usuarios WHERE email = :email and senha = :senha");
-    $sql->bindValue(":email", $email);
-    $sql->bindValue(":senha", $senha);
-    $sql->execute();
-
-    if($sql->rowCount()>0){
-$dado=$sql->fetch();
-$_SESSION['cLogin']= $dado['id_usuarios'];
-
-return true;
-    }else{
-        return false;
+        }
     }
 
+    public function login($email, $senha){
+        global $pdo;
+        $sql=$pdo->prepare("SELECT id_usuarios FROM usuarios WHERE email = :email and senha = :senha");
+        $sql->bindValue(":email", $email);
+        $sql->bindValue(":senha", $senha);
+        $sql->execute();
+    
+        if($sql->rowCount()>0){
+    $dado=$sql->fetch();
+    $_SESSION['cLogin']= $dado['id_usuarios'];
+    
+    return true;
+        }else{
+            return false;
+        }
+    
+    }
 }
-}
-
 ?>
