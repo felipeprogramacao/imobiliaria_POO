@@ -11,8 +11,8 @@
   </div>
   </div>
   <div class="nav navbar-nav navbar-right">
-          <?php if(isset($_SESSION['cLogin']) && !empty($_SESSION['cLogin'])){ ?>
-              <li class="nav-item"><a class="nav-link disabled" href="imoveis_cliente.php">Meus Anuncios</a></li>
+          <?php if(isset($_SESSION['logado']) && !empty($_SESSION['logado'])){ ?>
+              <li class="nav-item"><a class="nav-link disabled" href="meus_imoveis.php">Meus Imóveis</a></li>
                <li class="nav-item"><a class="nav-link" href="sair.php">Sair</a></li>
               <?php  } else { ?>
                   <li class="nav-item"><a class="nav-link disabled" href="cadastro_cliente.php">Cadastre-se</a></li>

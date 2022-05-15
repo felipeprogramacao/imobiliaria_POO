@@ -13,19 +13,19 @@
 		$email = addslashes($_POST['email']);
 		$senha = $_POST['senha'];
 		$telefone = addslashes($_POST['telefone']);
-                 //verifica se nome, email, telefone não estar vazio
+                
 		if(!empty($nome) && !empty($email) && !empty($senha)) {
-                    //efetuando o cadastro
+                   
 			if($u->cadastrar($nome, $email, $senha, $telefone)) {
 				?>
-                           <!-- se foi cadastrado-->
+                          
 				<div class="alert alert-success">
 					<strong>Parabéns!</strong> Cadastrado com sucesso. <a href="login.php" class="alert-link">Faça o login agora</a>
 				</div>
 				<?php
 			} else {
 				?>
-                             <!-- se já existir um email cadastrado-->
+                            
 				<div class="alert alert-warning">
 					Este usuário já existe! <a href="login.php" class="alert-link">Faça o login agora</a>
 				</div>

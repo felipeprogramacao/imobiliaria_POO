@@ -14,7 +14,7 @@
 
 		if($usuarios->login($email, $senha)) {
 			?>
-                            <!-- entrou no sistema redireciona para  a pagina inicial-->
+                           
 			<script type="text/javascript">window.location.href="./";</script>
 			<?php
 		} else {

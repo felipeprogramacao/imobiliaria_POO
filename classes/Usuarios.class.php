@@ -30,7 +30,7 @@ return true;
     
         if($sql->rowCount()>0){
     $dado=$sql->fetch();
-    $_SESSION['cLogin']= $dado['id_usuarios'];
+    $_SESSION['logado']= $dado['id_usuarios'];
     
     return true;
         }else{
@@ -38,5 +38,6 @@ return true;
         }
     
     }
+    
 }
 ?>

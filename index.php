@@ -20,7 +20,7 @@
   <li class="list-group-item list-group-item-light"><b>Aluguel</b> <br>sofiacorrea@nossaimobiliaria.com.br</li>
   <li class="list-group-item list-group-item-light"><b>Adm. Cond. </b><br>patricialima@nossaimobiliaria.com.br</li>
   <li class="list-group-item list-group-item-light"><b>Escritório</b><br> Avenida Ipiranga / Porto Alegre /RS</li>
-  <li class="list-group-item list-group-item-light"><br><b>Mario Lopes / Corretor  - Plantão</b><br><a href="https://wa.me/55519999999"><img src="assets/images/wht.jpg" width="280" height="46"></a></li>
+  <li class="list-group-item list-group-item-light"><br><b>Mario Lopes / Corretor  - Plantão</b><br><a href="https://wa.me/55519999999"><img src="assets/images/fone/wht.jpg" width="280" height="46"></a></li>
   
 </ul>
 	 </div>
