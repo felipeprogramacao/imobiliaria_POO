@@ -18,14 +18,15 @@
       $array = array();
       global $pdo;
                                 
-      $dados=$pdo->prepare("SELECT *,(SELECT nome_imagem from imagem_casa WHERE fk_id_casa = casa.id_casa LIMIT 1)as fotos FROM casa");
+      $dados=$pdo->prepare("SELECT * FROM casa");
+      $dados->bindValue("casa.id_casa", $id);
       $dados->execute();  
       if($dados->rowCount() > 0) {
         $array = $dados->fetch();
         $array['fotos'] = array();
   
-        $dados = $pdo->prepare("SELECT id,url FROM anuncios_imagens WHERE id_anuncio = :id_anuncio");
-        $dados->bindValue(":id_anuncio", $id);
+        $dados = $pdo->prepare("SELECT * FROM imagem_casa WHERE fk_id_casa = :id_casa");
+        $dados->bindValue(":id_casa", $id);
         $dados->execute();
   
         if($dados->rowCount() > 0) {

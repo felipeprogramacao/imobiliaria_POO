@@ -6,31 +6,35 @@
 
 <?php
 require 'classes/Casas.class.php';
-//require 'classes/usuarios.class.php';
+
 $casa = new Casas();
-//$u = new Usuarios();
-//id de anuncio
-if(isset($_GET['id_casa']) && !empty($_GET['id_casa'])) {
+
+
 	$id = addslashes($_GET['id_casa']);
-} else {
-	?>
-	<script type="text/javascript">window.location.href="index.php";</script>
-	<?php
-	exit;
-}
+  
+
 
 $imovel = $casa->LocalizaCasasId($id);
-$proprietario= $imovel['proprietario'];
-var_dump($proprietario);
-?>
+ 
+
+        
+        $fot=$imovel['fotos'];
+        
+        foreach($fot as $fot2){
+          
+  ?>
+        
+
+
 
 <div>
   <div>
   <div class="row">
     <div class="col-xl">
-    <br>
+    
    
-    <img src="assets/images/imoveis/">
+    <img src="assets/images/imoveis/<?php echo $fot2['nome_imagem']; ?>" class="img-fluid m-2 width: 30px" alt="Imagem responsiva" />
+        <?php } ?>
       
   </div>
     
